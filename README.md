@@ -2,7 +2,7 @@
 
 Model Context Protocol (MCP) server for MiniMax Music Generation API. Enables AI agents to generate music and audio content through the MiniMax API via the MCP protocol.
 
-> **Status:** Planning — implementation not started yet
+> **Status:** ✅ Implementation complete — `npm run build` + `npm run test` (53/53 passing)
 
 ## What This Does
 
@@ -26,9 +26,9 @@ OpenCode skills are instruction documents only — they cannot make HTTP calls o
 
 ## Documentation
 
-- [Implementation Plan (Official API Reference)](./minimax-music-mcp-official-plan.md) — authoritative implementation plan based on `https://platform.minimax.io/docs/api-reference/music-generation`
-- [Review Report](./minimax-music-mcp-review.md) — analysis of skill-only vs MCP server approach
-- [Original Plan](./minimax-music-mcp-plan.md) — initial Sisyphus plan (superseded by official-plan.md)
+- [Implementation Plan (Official API Reference)](./docs/reference/minimax-music-mcp-official-plan.md) — authoritative implementation plan based on `https://platform.minimax.io/docs/api-reference/music-generation`
+- [Review Report](./docs/reference/minimax-music-mcp-review.md) — analysis of skill-only vs MCP server approach
+- [Original Plan](./docs/reference/minimax-music-mcp-plan.md) — initial Sisyphus plan (superseded by official-plan.md)
 
 ## Quick Look: MiniMax Music API
 
@@ -59,8 +59,37 @@ Authorization: Bearer <MINIMAX_API_KEY>
 | Item | Status |
 |------|--------|
 | Documentation | ✅ Complete |
-| Implementation | ❌ Not started |
-| OpenCode registration | ❌ Not done |
+| Implementation | ✅ Complete — `dist/index.js`, 6 source modules |
+| Unit Tests | ✅ 53/53 passing — validation, audio-output, minimax-client |
+| Build | ✅ `npm run build` → 0 errors |
+| OpenCode registration | ✅ Block provided in AGENTS.md — API key via env only |
+
+## Quick Start
+
+```bash
+npm install
+npm run build
+npm run test
+# Set MINIMAX_API_KEY before running
+node dist/index.js
+```
+
+## OpenCode Registration
+
+Add to your OpenCode `mcp` config:
+
+```json
+"mcp": {
+  "minimax-music": {
+    "type": "local",
+    "command": ["node", "C:\\NEW PRG\\minimax-music-mcp\\dist\\index.js"],
+    "enabled": true,
+    "timeout": 300000
+  }
+}
+```
+
+Set `MINIMAX_API_KEY` environment variable before starting OpenCode.
 
 ## License
 
