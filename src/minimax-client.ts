@@ -188,7 +188,7 @@ export async function callGenerateMusic(
   input: GenerateMusicInput
 ): Promise<GenerationResult> {
   return generateMusicFromAPI({
-    model: input.model ?? "music-2.6-free",
+    model: input.model ?? "music-2.6",
     prompt: input.prompt,
     lyrics: input.lyrics,
     lyrics_optimizer: input.lyrics_optimizer,
@@ -207,7 +207,7 @@ export async function callGenerateInstrumental(
   audioSetting: AudioSetting | undefined
 ): Promise<GenerationResult> {
   return generateMusicFromAPI({
-    model: model ?? "music-2.6-free",
+    model: model ?? "music-2.6",
     prompt,
     is_instrumental: true,
     output_format: outputFormat,
@@ -229,7 +229,7 @@ export async function callGenerateCover(
   audioSetting: AudioSetting | undefined
 ): Promise<GenerationResult> {
   return generateMusicFromAPI({
-    model: model ?? "music-cover-free",
+    model: model ?? "music-cover",
     prompt,
     lyrics,
     audio_url: audioUrl,

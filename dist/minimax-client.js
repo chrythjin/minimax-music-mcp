@@ -104,7 +104,7 @@ async function generateMusicFromAPI(options, toolName = "generate_music") {
 // ---------------------------------------------------------------------------
 async function callGenerateMusic(input) {
     return generateMusicFromAPI({
-        model: input.model ?? "music-2.6-free",
+        model: input.model ?? "music-2.6",
         prompt: input.prompt,
         lyrics: input.lyrics,
         lyrics_optimizer: input.lyrics_optimizer,
@@ -116,7 +116,7 @@ async function callGenerateMusic(input) {
 }
 async function callGenerateInstrumental(prompt, model, outputFormat, stream, audioSetting) {
     return generateMusicFromAPI({
-        model: model ?? "music-2.6-free",
+        model: model ?? "music-2.6",
         prompt,
         is_instrumental: true,
         output_format: outputFormat,
@@ -127,7 +127,7 @@ async function callGenerateInstrumental(prompt, model, outputFormat, stream, aud
 }
 async function callGenerateCover(prompt, model, lyrics, audioUrl, audioBase64, coverFeatureId, outputFormat, stream, audioSetting) {
     return generateMusicFromAPI({
-        model: model ?? "music-cover-free",
+        model: model ?? "music-cover",
         prompt,
         lyrics,
         audio_url: audioUrl,

@@ -1,0 +1,17 @@
+{
+  "active_plan": "C:\\NEW PRG\\minimax-music-mcp\\.sisyphus\\plans\\minimax-music-mcp-final-implementation-plan.md",
+  "started_at": "2026-05-04T09:02:12.753Z",
+  "session_ids": [
+    "ses_20dc6bb02ffe9oFqaJIzJO4hL2",
+    "ses_20dc54002ffeEJO721IPR2PTGh",
+    "ses_20dc3f3e2ffe6Vu9QKCJ9WDSxd"
+  ],
+  "session_origins": {
+    "ses_20dc6bb02ffe9oFqaJIzJO4hL2": "direct",
+    "ses_20dc54002ffeEJO721IPR2PTGh": "direct",
+    "ses_20dc3f3e2ffe6Vu9QKCJ9WDSxd": "direct"
+  },
+  "plan_name": "minimax-music-mcp-final-implementation-plan",
+  "agent": "atlas",
+  "task_sessions": {}
+}

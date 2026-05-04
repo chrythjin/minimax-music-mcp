@@ -187,7 +187,7 @@ export function validateGenerateMusic(
     valid: true,
     value: {
       ...v,
-      model: (v.model as GenerateMusicInput["model"] | undefined) ?? "music-2.6-free",
+      model: (v.model as GenerateMusicInput["model"] | undefined) ?? "music-2.6",
       output_format: (v.output_format as GenerateMusicInput["output_format"] | undefined) ?? "hex",
     } as GenerateMusicInput,
   };
@@ -237,7 +237,7 @@ export function validateGenerateInstrumental(
     valid: true,
     value: {
       ...v,
-      model: (v.model as GenerateInstrumentalInput["model"] | undefined) ?? "music-2.6-free",
+      model: (v.model as GenerateInstrumentalInput["model"] | undefined) ?? "music-2.6",
       output_format: (v.output_format as GenerateInstrumentalInput["output_format"] | undefined) ?? "hex",
     } as GenerateInstrumentalInput,
   };
@@ -341,7 +341,7 @@ export function validateGenerateCover(
     valid: true,
     value: {
       ...v,
-      model: (v.model as GenerateCoverInput["model"] | undefined) ?? "music-cover-free",
+      model: (v.model as GenerateCoverInput["model"] | undefined) ?? "music-cover",
       output_format: (v.output_format as GenerateCoverInput["output_format"] | undefined) ?? "hex",
     } as GenerateCoverInput,
   };

@@ -1,0 +1,3 @@
+# Style And Conventions
+
+TypeScript ESM imports with `.js` suffix for local modules. Prefer explicit interfaces and narrow unions. Project uses small focused modules: `errors.ts`, `schemas.ts`, `audio-output.ts`, `minimax-client.ts`, `tools.ts`, `index.ts`. Tests use Jest with AAA-style cases and direct validation/client assertions. Keep implementation minimal and plan-compliant; avoid adding dependencies. API key behavior must remain env-only via `MINIMAX_API_KEY`.

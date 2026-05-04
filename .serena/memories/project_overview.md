@@ -1,0 +1,3 @@
+# MiniMax Music MCP
+
+Node.js + TypeScript stdio MCP server wrapping MiniMax official Music Generation API (`POST https://api.minimax.io/v1/music_generation`). Source lives in `src/`; tests live in `test/`; build output is `dist/index.js`. First-phase scope is three MCP tools: `generate_music`, `generate_instrumental`, and `generate_cover`. API key must come from `MINIMAX_API_KEY` environment variable only; never hardcode or store it in OpenCode config.

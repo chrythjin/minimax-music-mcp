@@ -127,7 +127,7 @@ function validateGenerateMusic(input) {
         valid: true,
         value: {
             ...v,
-            model: v.model ?? "music-2.6-free",
+            model: v.model ?? "music-2.6",
             output_format: v.output_format ?? "hex",
         },
     };
@@ -168,7 +168,7 @@ function validateGenerateInstrumental(input) {
         valid: true,
         value: {
             ...v,
-            model: v.model ?? "music-2.6-free",
+            model: v.model ?? "music-2.6",
             output_format: v.output_format ?? "hex",
         },
     };
@@ -259,7 +259,7 @@ function validateGenerateCover(input) {
         valid: true,
         value: {
             ...v,
-            model: v.model ?? "music-cover-free",
+            model: v.model ?? "music-cover",
             output_format: v.output_format ?? "hex",
         },
     };
