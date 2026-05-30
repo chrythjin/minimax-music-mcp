@@ -100,7 +100,7 @@ describe("generateMusicFromAPI", () => {
     await callGenerateMusic({ lyrics: "hello world" });
 
     expect(getFirstRequestBody(mockFetch)).toMatchObject({
-      model: "music-2.6-free",
+      model: "music-2.6",
     });
   });
 
@@ -121,7 +121,7 @@ describe("generateMusicFromAPI", () => {
     );
 
     expect(getFirstRequestBody(mockFetch)).toMatchObject({
-      model: "music-2.6-free",
+      model: "music-2.6",
       is_instrumental: true,
     });
     expect(result.file_path).toContain("generate_instrumental");
@@ -148,7 +148,7 @@ describe("generateMusicFromAPI", () => {
     );
 
     expect(getFirstRequestBody(mockFetch)).toMatchObject({
-      model: "music-cover-free",
+      model: "music-cover",
       audio_url: "https://example.com/audio.mp3",
     });
     expect(result.file_path).toContain("generate_cover");

@@ -27,7 +27,7 @@ function listTools() {
                     model: {
                         type: "string",
                         enum: ["music-2.6", "music-2.6-free"],
-                        description: "Model variant. Defaults to music-2.6-free. Use music-2.6 for token-plan users.",
+                        description: "Model variant. Defaults to music-2.6. Use music-2.6-free for free-plan users.",
                     },
                     prompt: {
                         type: "string",
@@ -86,7 +86,7 @@ function listTools() {
                     model: {
                         type: "string",
                         enum: ["music-2.6", "music-2.6-free"],
-                        description: "Model variant. Defaults to music-2.6-free. Use music-2.6 for token-plan users.",
+                        description: "Model variant. Defaults to music-2.6. Use music-2.6-free for free-plan users.",
                     },
                     prompt: {
                         type: "string",
@@ -137,7 +137,7 @@ function listTools() {
                     model: {
                         type: "string",
                         enum: ["music-cover", "music-cover-free"],
-                        description: "Model variant. Defaults to music-cover-free. Use music-cover for token-plan users.",
+                        description: "Model variant. Defaults to music-cover. Use music-cover-free for free-plan users.",
                     },
                     prompt: {
                         type: "string",

@@ -15,11 +15,11 @@ describe("generate_music validation", () => {
     expect(result.valid).toBe(true);
   });
 
-  it("defaults omitted model to music-2.6-free", () => {
+  it("defaults omitted model to music-2.6", () => {
     const result = validateGenerateMusic({ lyrics: "hello world" });
     expect(result.valid).toBe(true);
     if (!result.valid) throw new Error(result.error);
-    expect(result.value.model).toBe("music-2.6-free");
+    expect(result.value.model).toBe("music-2.6");
   });
 
   it("accepts lyrics_optimizer with prompt but no lyrics", () => {
@@ -95,11 +95,11 @@ describe("generate_instrumental validation", () => {
     expect(result.valid).toBe(true);
   });
 
-  it("defaults omitted model to music-2.6-free", () => {
+  it("defaults omitted model to music-2.6", () => {
     const result = validateGenerateInstrumental({ prompt: "peaceful piano" });
     expect(result.valid).toBe(true);
     if (!result.valid) throw new Error(result.error);
-    expect(result.value.model).toBe("music-2.6-free");
+    expect(result.value.model).toBe("music-2.6");
   });
 
   it("rejects missing prompt", () => {
@@ -133,11 +133,11 @@ describe("generate_cover validation", () => {
     expect(result.valid).toBe(true);
   });
 
-  it("defaults omitted model to music-cover-free", () => {
+  it("defaults omitted model to music-cover", () => {
     const result = validateGenerateCover({ prompt: "make it upbeat", audio_url: "https://example.com/audio.mp3" });
     expect(result.valid).toBe(true);
     if (!result.valid) throw new Error(result.error);
-    expect(result.value.model).toBe("music-cover-free");
+    expect(result.value.model).toBe("music-cover");
   });
 
   it("accepts valid input with audio_base64", () => {
